@@ -144,7 +144,6 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x0" />
         <Minor OpcodeValue="0x1" />
         <Minor OpcodeValue="0x2" Cluster="1" WVal="1" RVal="1" />
-        <Minor OpcodeValue="0x3" Cluster="1" Exception="Cant compare. Node written as decimal read as binary with spaces." />
     <!-- core hotplug major end-->
 
     <!-- interactive major start -->

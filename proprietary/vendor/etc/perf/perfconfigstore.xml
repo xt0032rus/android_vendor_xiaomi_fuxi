@@ -32,14 +32,13 @@ ________________________________________________________________________________
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <Prop Name="vendor.iop.enable_uxe" Value="0" />
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
-                <Prop Name="vendor.iop.enable_speed" Value="false" /> <!--rename to perf-->
+                <Prop Name="vendor.iop.enable_speed" Value="true" /> <!--rename to perf-->
                 <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="10" />
-                <Prop Name="ro.vendor.perf.enable.prekill"        Value="false"     />
+                <Prop Name="ro.vendor.perf.enable.prekill"        Value="true"     />
                 <Prop Name="ro.vendor.perf.enable.procomp" Value="true"/>
-                <Prop Name="ro.vendor.perf.enable.prefapps" Value="false" />
+                <Prop Name="ro.vendor.perf.enable.prefapps" Value="true" />
                 <Prop Name="vendor.prekill_MIN_ADJ_to_Kill" Value="800"  />
                 <Prop Name="vendor.prekill_MAX_ADJ_to_Kill" Value="1000"  />
                 <Prop Name="ro.vendor.perf.count.prefapps" Value="12" />
@@ -68,7 +67,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.perf.performancemode.support" Value="true" Target="kalama" />
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
-                <Prop Name="vendor.appcompact.enable_app_compact" Value="false" />
+                <Prop Name="vendor.appcompact.enable_app_compact" Value="true" />
                 <Prop Name="vendor.appcompact.full_compact_type" Value="2" />
                 <Prop Name="vendor.appcompact.some_compact_type" Value="2" />
                 <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
