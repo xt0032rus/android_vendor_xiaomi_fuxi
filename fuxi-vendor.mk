@@ -767,6 +767,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/xiaomi/fuxi/proprietary/odm/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so \
+    vendor/xiaomi/fuxi/proprietary/vendor/etc/displayconfig/display_id_4630947006070067843.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947006070067843.xml \
     vendor/xiaomi/fuxi/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/fuxi/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/fuxi/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
