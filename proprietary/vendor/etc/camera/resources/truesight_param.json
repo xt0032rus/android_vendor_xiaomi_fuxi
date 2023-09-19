@@ -5,7 +5,7 @@
 	"##note3": "3.某一配置项如果不存在, 但存在default项目项, 则使用default配置项. 如: EffectParams::capture下未配置OtherFront, 则使用default配置项",
 
 	"TrueSight": "",
-	"BrandModel": "xiaomi_m1",
+	"BrandModel": "xiaomi_m2",
 	"CaptureDefaultEffectPath": "render/Effect/effect_mode_clear.json",
 	"PreviewDefaultEffectPath": "render/Effect/effect_mode_clear.json",
 	"EffectGLSLPath": "render/glsl/",

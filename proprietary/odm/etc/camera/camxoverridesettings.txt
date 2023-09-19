@@ -421,7 +421,7 @@ shakingOptimization=TRUE
 #For 3rdEISV2
 is3rdEISV2Enabled=TRUE
 
-overrideMinIFEHeight=320
+overrideMinIFEHeight=960
 
 #Enable quickcamera
 QuickCameraSupported=TRUE

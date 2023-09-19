@@ -362,7 +362,7 @@
         </flatmode>
         <dither>
             <ditherParamName>DitherStrength HistControl Hist0Thresh</ditherParamName>
-            <DitherStrength>4</DitherStrength>
+            <DitherStrength>3</DitherStrength>
             <HistControl>10 30</HistControl>
             <Hist0Thresh>80 90</Hist0Thresh>
         </dither>

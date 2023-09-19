@@ -29,7 +29,7 @@
             Id="0x00001081" Type="1" Enable="true" Timeout="600" Target="kalama"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41848000, 0x104410,
-                       0x41844000, 0x104410, 0x42C10000, 0x1, 0x43460000, 0x401640,
+                       0x41844000, 0x104410, 0x42C10000, 0x1, 0x43488000, 0x401640,
                        0x43458000, 0x1B8A00, 0x4281C000, 2000, 0x4100C000, 0x3, 0x5FC00000, 0x7f01, 0x5FC08000, 0x3"
             Applist="com.miui.calculator, com.miui.weather2, com.miui.notes, com.miui.gallery, com.android.calendar, com.android.deskclock,
                      com.android.soundrecorder, com.android.contacts, com.android.mms, com.duokan.reader, com.miui.securitycenter, com.android.settings,

@@ -35,7 +35,8 @@
             "name": "adj_threshold",
             "config": {
                 "com.tencent.mm": 250,
-                "com.miui.screenrecorder": 200
+                "com.miui.screenrecorder": 200,
+                "com.samsung.android.app.watchmanager:contentprovider": 250
             }
         }
     ],
@@ -53,7 +54,8 @@
                 "com.tencent.mm",
                 "com.miui.gallery",
                 "com.miui.personalassistant",
-                "com.miui.screenrecorder"
+                "com.miui.screenrecorder",
+                "com.samsung.android.app.watchmanager:contentprovider"
             ]
         },
         {

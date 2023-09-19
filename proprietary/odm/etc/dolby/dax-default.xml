@@ -371,7 +371,7 @@
         <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
-        <volmax-boost value="32"/>
+        <volmax-boost value="22"/>
         <hearing-protection-enable value="false"/>
         <hearing-protection-rms-averaging-time-win-len value="6"/>
         <hearing-protection-rms-attenuation-target value="-256"/>
@@ -476,7 +476,7 @@
         <mi-virtualizer-binaural-steering-enable value="false"/>
         <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
-        <surround-boost value="40"/>
+        <surround-boost value="24"/>
         <volmax-boost value="16"/>
         <hearing-protection-enable value="false"/>
         <hearing-protection-rms-averaging-time-win-len value="6"/>
@@ -573,7 +573,7 @@
       <endpoint_type id="headphone">
         <include ieq_preset="2"/>
         <ieq-enable value="true"/>
-        <ieq-amount value="8"/>
+        <ieq-amount value="5"/>
         <calibration-boost value="0"/>
         <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="false"/>
@@ -1209,7 +1209,7 @@
       <endpoint_type id="headphone">
         <include ieq_preset="1"/>
         <ieq-enable value="true"/>
-        <ieq-amount value="8"/>
+        <ieq-amount value="7"/>
         <calibration-boost value="0"/>
         <mi-dialog-enhancer-steering-enable value="false"/>
         <dialog-enhancer-enable value="true"/>
