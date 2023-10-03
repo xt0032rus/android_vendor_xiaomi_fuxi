@@ -6,3 +6,4 @@ service citsensor-hal-2-0  /odm/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0
     class late_start
     user system
     group system input
+    task_profiles ServiceCapacityLow
