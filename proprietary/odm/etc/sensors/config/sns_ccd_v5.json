@@ -24,7 +24,7 @@
     "ogvrvc6": { "ver": "0", "type": "int", "data": "0" },
     "ogvrvc7": { "ver": "0", "type": "int", "data": "0xC8" },
     "enable_debug_sensor_ogv": { "ver": "0", "type": "int", "data": "0" }
-  }
+  },
   "ccd_v5_gbe": {
     "owner": "sns_ccd",
     "gbens": { "ver": "0", "type": "int", "data": "0" },

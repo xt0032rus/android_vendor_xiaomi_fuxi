@@ -1,5 +1,5 @@
 ##############################################################################
-# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# Copyright (c) 2022-2023 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 ##############################################################################
@@ -50,29 +50,31 @@
 sensor_orientation = 1 2 3
 
 # tracking camera properties
-tracking_camera_id                  = 0
-tracking_camera_sensor              = v4l_ov7251_stereo
-tracking_camera_driver              = v4l2
-tracking_camera_res                 = 2560 960
-tracking_camera_quarter_res         = 1280 480
-tracking_camera_frame_rdi_mode      = false
-tracking_camera_frame_rdi_bit_depth = 10
-tracking_camera_rdi_frame_format    = raw10
-tracking_camera_auto_exposure       = true
-tracking_camera_hvx_mode            = false
-tracking_camera_hvx_algo            = qvrcam_receiver
-tracking_camera_master_only         = false
-tracking_camera_control_protected   = true
-tracking_camera_privileged_client   = 0
+#tracking_camera_id                  = 0
+#tracking_camera_sensor              = v4l_ov7251_stereo
+#tracking_camera_driver              = v4l2
+#tracking_camera_res                 = 2560 960
+#tracking_camera_quarter_res         = 1280 480
+#tracking_camera_frame_rdi_mode      = false
+#tracking_camera_frame_rdi_bit_depth = 10
+#tracking_camera_rdi_frame_format    = raw10
+#tracking_camera_auto_exposure       = true
+#tracking_camera_hvx_mode            = false
+#tracking_camera_hvx_algo            = qvrcam_receiver
+#tracking_camera_master_only         = false
+#tracking_camera_control_protected   = true
+#tracking_camera_privileged_client   = 0
 # camera logging (disabled, continuous, oneshot)
-tracking_camera_frame_logging_mode  = disabled
-tracking_camera_hvx_sensor          = v4l_ov7251
-tracking_camera_default_flash_mode  = off
-tracking_camera_hvx_stereo_slave_camera_id = -1
-tracking_camera_default_resolution_mode  = quarter
-tracking_camera_supported_formats        = y8
-tracking_camera_default_frame_format     = y8
+#tracking_camera_frame_logging_mode  = disabled
+#tracking_camera_hvx_sensor          = v4l_ov7251
+#tracking_camera_default_flash_mode  = off
+#tracking_camera_hvx_stereo_slave_camera_id = -1
+#tracking_camera_default_resolution_mode  = quarter
+#tracking_camera_supported_formats        = y8
+#tracking_camera_default_frame_format     = y8
 
+# Can deprecate this camera config if host smartViewer protocol version >= 2.0.3
+# and viewer smartViewer protocol version >= 2.0.2
 # uvc-tracking camera properties
 uvc-tracking_camera_id                  = 1
 uvc-tracking_camera_sensor              = v4l_ov9282_stereo
@@ -101,8 +103,8 @@ uvc-tracking_camera_default_frame_format     = y8
 wireless-tracking_camera_id                  = 1
 wireless-tracking_camera_sensor              = wl_ov9282_stereo
 wireless-tracking_camera_driver              = wireless
-wireless-tracking_camera_res                 = 1280 400
-wireless-tracking_camera_quarter_res         = 1280 400
+wireless-tracking_camera_res                 = 1280 400 30 30
+wireless-tracking_camera_quarter_res         = 1280 400 30 30
 wireless-tracking_camera_frame_rdi_mode      = false
 wireless-tracking_camera_frame_rdi_bit_depth = 10
 wireless-tracking_camera_rdi_frame_format    = raw10
@@ -150,8 +152,8 @@ uvc-rgb-left_camera_default_frame_format       = yuv420
 wireless-rgb-left_camera_id                      = 2
 wireless-rgb-left_camera_sensor                  = wl_ov8856
 wireless-rgb-left_camera_driver                  = wireless
-wireless-rgb-left_camera_res                     = 1280 720
-wireless-rgb-left_camera_quarter_res             = 1280 720
+wireless-rgb-left_camera_res                     = 1280 720 30 30
+wireless-rgb-left_camera_quarter_res             = 1280 720 30 30
 wireless-rgb-left_camera_frame_rdi_mode          = false
 wireless-rgb-left_camera_frame_rdi_bit_depth     = 10
 wireless-rgb-left_camera_rdi_frame_format        = raw10
@@ -171,31 +173,31 @@ wireless-rgb-left_camera_default_resolution_mode    = full
 wireless-rgb-left_camera_supported_formats          = yuv420
 wireless-rgb-left_camera_default_frame_format       = yuv420
 
-# uvc-rgb camera properties
-uvc-rgb_camera_id                      = 3
-uvc-rgb_camera_sensor                  = v4l_ov8856_stereo
-uvc-rgb_camera_driver                  = v4l2
-uvc-rgb_camera_calibration_name        = rgb-left,rgb-right
-uvc-rgb_camera_res                     = 2560 720
-uvc-rgb_camera_quarter_res             = 2560 720
-uvc-rgb_camera_frame_rdi_mode          = false
-uvc-rgb_camera_frame_rdi_bit_depth     = 10
-uvc-rgb_camera_rdi_frame_format        = raw10
-uvc-rgb_camera_auto_exposure           = false
-uvc-rgb_camera_hvx_mode                = false
-uvc-rgb_camera_hvx_algo                = qvrcam_receiver
-uvc-rgb_camera_master_only             = false
-uvc-rgb_camera_control_protected       = false
-uvc-rgb_camera_privileged_client       = 0
+# uvc-rgb cameras properties
+#uvc-rgb_camera_id                      = 3
+#uvc-rgb_camera_sensor                  = v4l_ov8856_stereo
+#uvc-rgb_camera_driver                  = v4l2
+#uvc-rgb_camera_calibration_name        = rgb-left,rgb-right
+#uvc-rgb_camera_res                     = 2560 720
+#uvc-rgb_camera_quarter_res             = 2560 720
+#uvc-rgb_camera_frame_rdi_mode          = false
+#uvc-rgb_camera_frame_rdi_bit_depth     = 10
+#uvc-rgb_camera_rdi_frame_format        = raw10
+#uvc-rgb_camera_auto_exposure           = false
+#uvc-rgb_camera_hvx_mode                = false
+#uvc-rgb_camera_hvx_algo                = qvrcam_receiver
+#uvc-rgb_camera_master_only             = false
+#uvc-rgb_camera_control_protected       = false
+#uvc-rgb_camera_privileged_client       = 0
 # camera logging (disabled, continuous, oneshot)
-uvc-rgb_camera_frame_logging_mode      = disabled
-uvc-rgb_camera_hvx_sensor              = v4l_ov8856
-uvc-rgb_camera_default_flash_mode      = off
-uvc-rgb_camera_enable_yuv_ipe_bypass   = false
-uvc-rgb_camera_hvx_stereo_slave_camera_id = -1
-uvc-rgb_camera_default_resolution_mode    = full
-uvc-rgb_camera_supported_formats          = yuv420
-uvc-rgb_camera_default_frame_format       = yuv420
+#uvc-rgb_camera_frame_logging_mode      = disabled
+#uvc-rgb_camera_hvx_sensor              = v4l_ov8856
+#uvc-rgb_camera_default_flash_mode      = off
+#uvc-rgb_camera_enable_yuv_ipe_bypass   = false
+#uvc-rgb_camera_hvx_stereo_slave_camera_id = -1
+#uvc-rgb_camera_default_resolution_mode    = full
+#uvc-rgb_camera_supported_formats          = yuv420
+#uvc-rgb_camera_default_frame_format       = yuv420
 
 # 6dof pose logging (disabled, continuous, oneshot)
 tracking_6dof_pose_logging_mode    = disabled

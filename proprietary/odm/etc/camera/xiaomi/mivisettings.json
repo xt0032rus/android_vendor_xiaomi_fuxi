@@ -1,3 +1,4 @@
 {
-    "offlinedebugmask" : 0
+    "offlinedebugmask" : 0,
+    "Soc" : "QCOM"
 }

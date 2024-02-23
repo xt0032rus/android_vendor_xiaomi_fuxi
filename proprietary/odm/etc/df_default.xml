@@ -2,7 +2,7 @@
 <root>
     <color>
         <NodeTree>
-            <NodeName>unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight pwBl videoBox Smartfps TrueTone PaperMode sre AiDisp miBrightness flatmode dither</NodeName>
+            <NodeName>unlimitedCT eyeCare hbm ccbb wpCalib sunlightScreen maxBrightness gabb dcBacklight pwBl videoBox Smartfps TrueTone PaperMode sre AiDisp MtkNode miBrightness flatmode dither colortemp</NodeName>
         </NodeTree>
         <unlimitedCT>
             <unlimitedCTParamName>strength default cold warm uiParamMin paramMax dimmingTime dimmingStep</unlimitedCTParamName>
@@ -245,7 +245,8 @@
             <eyeCareCoeff8>-7.213E-12 1.086E-07 -3.350E-04 4.252E-01</eyeCareCoeff8>
         </PaperMode>
         <sre>
-           <sreParamName>sreGcIndex OriginalModeGCIndex sreLevelNum sreLevel hdrSreLevel sreIgcLevel0 sreIgcLevel1 sreIgcLevel2 sreIgcLevel3 sreIgcLevel4 sreIgcLevel5 sreExitThreshold hdrSreExitThreshold sreHistZoneNum sreDivisor hdrSreDivisor histData0Zone0 histData0Zone1 histData0Zone2 histData0Zone3 histData0Zone4 histData1Zone0 histData1Zone1 histData1Zone2 histData1Zone3 histData1Zone4 sreLut0 sreLut1 sreLut2 sreLut3 sreLut4 sreLut5 sreLut6 sreLut7 sreLut8 sreLut9 sreLut10 sreLut11 sreLut12 sreLut13 sreLut14 sreLut15 sreLut16 sreLut17 sreLut18 sreLut19 sreLut20 sreLut21 sreLut22 sreLut23 sreLut24 sreLut25 sreLut26 sreLut27 sreLut28</sreParamName>
+           <sreParamName>sreDimmingStep sreGcIndex OriginalModeGCIndex sreLevelNum sreLevel hdrSreLevel sreIgcLevel0 sreIgcLevel1 sreIgcLevel2 sreIgcLevel3 sreIgcLevel4 sreIgcLevel5 sreExitThreshold hdrSreExitThreshold sreHistZoneNum sreDivisor hdrSreDivisor histData0Zone0 histData0Zone1 histData0Zone2 histData0Zone3 histData0Zone4 histData1Zone0 histData1Zone1 histData1Zone2 histData1Zone3 histData1Zone4 sreLut0 sreLut1 sreLut2 sreLut3 sreLut4 sreLut5 sreLut6 sreLut7 sreLut8 sreLut9 sreLut10 sreLut11 sreLut12 sreLut13 sreLut14 sreLut15 sreLut16 sreLut17 sreLut18 sreLut19 sreLut20 sreLut21 sreLut22 sreLut23 sreLut24 sreLut25 sreLut26 sreLut27 sreLut28</sreParamName>
+           <sreDimmingStep>40 60 80</sreDimmingStep>
            <sreGcIndex>1</sreGcIndex>
            <OriginalModeGCIndex>3</OriginalModeGCIndex>
            <sreLevelNum>6</sreLevelNum>
@@ -307,6 +308,13 @@
            <AILutDimmingTime>6</AILutDimmingTime>
            <AIDimmingStep>36</AIDimmingStep>
         </AiDisp>
+        <MtkNode>
+            <MtkNodeParamName>CcorrBaseCoef MTKSilkyBrightnessEnable CustSilkyBrightnessEnable</MtkNodeParamName>
+            <CcorrBaseCoef>0</CcorrBaseCoef>
+            <MTKSilkyBrightnessEnable>0</MTKSilkyBrightnessEnable>
+            <!-- ccorr backlight: CustSilkyBrightnessEnable = 1; gamma backlight: CustSilkyBrightnessEnable = 2; others: CustSilkyBrightnessEnable = 0 -->
+            <CustSilkyBrightnessEnable>0</CustSilkyBrightnessEnable>
+        </MtkNode>
         <miBrightness>
             <miBrightnessParamName>Mi12bitEnable HbmEnable DcDimmingEnable hbmtype PanelMaxDbv PanelVirtualMax ManualMaxBl autoMaxBl ManualminBl MinDBV Mi12BitThr Mi12BitpanelDBVThr DCType DCDbvThresh PccDCDivision PccDCCoeff MiBlLut0 MiBlLut1 MiBlLut2 MiBlLut3 MiBlLutDC0 MiBlLutDC1 MiBlLutDC2 MiBlLutDC3 Mi12BitPCC0 Mi12BitPCC1 Mi12BitPCC2 Mi12BitPCC3 Mi12BitPCCDC0 Mi12BitPCCDC1 Mi12BitPCCDC2 Mi12BitPCCDC3</miBrightnessParamName>
             <Mi12bitEnable>0</Mi12bitEnable>
@@ -355,5 +363,9 @@
             <HistControl>10 30</HistControl>
             <Hist0Thresh>80 90</Hist0Thresh>
         </dither>
+        <colortemp>
+            <colortempParamName>EnableColorTempLut</colortempParamName>
+            <EnableColorTempLut>0</EnableColorTempLut>
+        </colortemp>
     </color>
 </root>

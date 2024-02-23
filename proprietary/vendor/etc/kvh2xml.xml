@@ -140,6 +140,9 @@
       <VALUE val="0xad000021" name="Voip_Fluence_Endfire_FNN"/>
       <VALUE val="0xad000022" name="Voip_Fluence_Pro_FNN"/>
       <VALUE val="0xad000023" name="Audio_Record_Enqore"/>
+      <VALUE val="0xad000084" name="VOIP_REMOTE_RECORD_SINGLE"/>
+      <VALUE val="0xad000085" name="VOIP_REMOTE_RECORD_MULTI"/>
+      <VALUE val="0xad000086" name="VOIP_REMOTE_RECORD_SURROUND"/>
     </KEY>
     <KEY name="StreamPP_RX" id="0xaf000000" description="Rx Stream Post/Pre Processing Chain">
       <VALUE val="0xaf000001" name="StreamPP_Rx_Default"/>
@@ -310,6 +313,7 @@
       <VALUE val="0xb5000005" name="LC3"/>
       <VALUE val="0xb5000006" name="AAC_ABR"/>
       <VALUE val="0xb5000007" name="APTX_AD_QLEA"/>
+      <VALUE val="0xb5000008" name="LHDC"/>
     </KEY>
     <KEY name="Virtualizer_Switch" id="0xb9000000" description="Virtualizer_Switch">
       <VALUE val="0x0" name="Off"/>
@@ -714,9 +718,6 @@
     <TAG id="0xc0001025" name="misound spatial surround enable" description="misound spatial surround enable">
       <KEY id="0xfa000003" name="MISOUND_SPATIAL_SURROUND_ENABLE"/>
     </TAG>
-    <TAG id="0xc0001200" name="fold_state" description="Device fold state">
-      <KEY id="0xfb000000" name="TAG_KEY_FOLD_STATE"/>
-    </TAG>
     <TAG id="0xc0001018" name="misound_update" description="Device misound update">
       <KEY id="0xfc000000" name="TAG_KEY_MISOUND_UPDATE"/>
     </TAG>
@@ -782,5 +783,6 @@
     <TAG id="0xc000003e" name="module_haptics_vi"/>
     <TAG id="0xc000003f" name="module_haptics_gen"/>
     <TAG id="0xc0000043" name="module_mspp"/>
+    <TAG id="0xc000341" name="miec_fold_state"/>
   </MODULE_TAGS>
 </KEY_DEF>

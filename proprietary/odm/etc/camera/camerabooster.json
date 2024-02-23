@@ -1,5 +1,5 @@
 {
-    "version": "2.0",
+    "version": "1.0",
     "product": "fuxi",
     "threshold": {
             "lowAdj_threshold": 0,
@@ -14,7 +14,8 @@
             "oom_update_support": true,
             "cam_boost_early_enable": true,
             "perceptible_support": true,
-            "lmkd_perceptible_support":true
+            "lmkd_perceptible_support": true,
+            "dynamic_task_proctect_support": true
         },
     "oom": {
             "oom_level": "51200:0,89600:100,128000:200,179200:251,262144:701,393216:800",
@@ -35,11 +36,18 @@
             "name": "adj_threshold",
             "config": {
                 "com.tencent.mm": 250,
-                "com.miui.screenrecorder": 200,
-                "com.samsung.android.app.watchmanager:contentprovider": 250
+                "com.miui.screenrecorder": 200
             }
         }
     ],
+    "dump_configs": {
+        "system_server": 665600,
+        "/system/bin/surfaceflinger": 563200,
+        "/vendor/bin/hw/vendor.qti.hardware.display.composer-service": 307200,
+        "com.miui.home": 563200,
+        "com.android.systemui": 563200,
+        "com.miui.miwallpaper": 307200
+    },
     "configs": [
         {
             "name": "protect_list",
@@ -54,8 +62,7 @@
                 "com.tencent.mm",
                 "com.miui.gallery",
                 "com.miui.personalassistant",
-                "com.miui.screenrecorder",
-                "com.samsung.android.app.watchmanager:contentprovider"
+                "com.miui.screenrecorder"
             ]
         },
         {
@@ -72,6 +79,7 @@
                 "com.phonetest.application:CameraMemoryWatcher",
                 "android.camera.cts",
                 "android.camera.cts:errorLoggingServiceProcess",
+                "com.samsung.android.app.watchmanager:contentprovider",
                 "com.miui.avpressuretest"
             ]
         },

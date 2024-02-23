@@ -34,7 +34,7 @@
             // override chroma qp offset value for 8 and 10 bits:
             // default: 0
             // allowed override value: -12
-            "enc_chroma_qp_offset_10_bit": 0,
+            "enc_chroma_qp_offset_10_bit": -12,
             "enc_chroma_qp_offset_8_bit": 0,
             //encoder bitrate savings control (CAC) - content adaptive coding feature
             // it is bitmask.
@@ -42,7 +42,11 @@
             //  0x1: 8 bit: enable.  10 bit: disable
             //  0x2: 8 bit: disable. 10 bit: enable
             //  0x3: 8 bit: enable.  10 bit: enable
-            "enc_bitrate_savings": 3
+            "enc_bitrate_savings": 3,
+            // create a new thread to execute vpp start
+            // if set to a positive integer like 2000, mian thread will wait for vpp start at most 2s
+            // if set to 0, just execute vpp start in main thread.
+            "vpp_max_retry_vpp_start_timeout": 0
         },
 
         // "DolbyVision": {
@@ -100,24 +104,12 @@
                 "codec_name": "c2.qti.filter.imagetransform",
                 "lib_name": "libqcodec2_imgtxrfilter.so",
                 "input_streams": [0],
-                "output_streams": [0, 1]
+                "output_streams": [0]
             },
             {
                 "codec_name": "c2.qti.filter.cvp",
                 "lib_name": "libqcodec2_cvpfilter.so",
                 "input_streams": [0],
-                "output_streams": [0]
-            },
-            {
-                "codec_name": "c2.qti.filter.saliencymap",
-                "lib_name": "libqcodec2_salmapfilter.so",
-                "input_streams": [1],
-                "output_streams": [1]
-            },
-            {
-                "codec_name": "c2.qti.filter.streamintegrator",
-                "lib_name": "libqcodec2_streaminteg_filter.so",
-                "input_streams": [0, 1],
                 "output_streams": [0]
             }
         ],

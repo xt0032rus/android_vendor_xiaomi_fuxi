@@ -640,7 +640,8 @@
         },
         {
             "ApkFunctionType":"EnableVideoOut",
-            "ApkTable" :["com.smile.gifmaker"]
+            "ApkTable" :["com.smile.gifmaker",
+                                          "com.kwai.m2u"]
         },
         {
             "ApkFunctionType":"FactoryRunin",

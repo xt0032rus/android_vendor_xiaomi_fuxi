@@ -324,7 +324,7 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
-      <headphone-virtualizer-mode value="0"/>
+      <headphone-virtualizer-mode value="2"/>
       <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
       <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
       <advanced-headphone-virtualizer-lr-angle value="45"/>
@@ -371,7 +371,7 @@
         <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
-        <volmax-boost value="22"/>
+        <volmax-boost value="32"/>
         <hearing-protection-enable value="false"/>
         <hearing-protection-rms-averaging-time-win-len value="6"/>
         <hearing-protection-rms-attenuation-target value="-256"/>
@@ -382,7 +382,7 @@
         <volume-leveler-in-target value="-256"/>
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
-        <virtualizer-enable value="true"/>
+        <virtualizer-enable value="false"/>
         <virtualizer-start-band value="0"/>
         <headphone-virtualizer-steerer-source-distance value="24"/>
         <bass-enhancer-enable value="false"/>
@@ -430,7 +430,7 @@
       <drc-metadata/>
       <reverb-suppression-enable value="false"/>
       <reverb-suppression-amount value="9"/>
-      <headphone-virtualizer-mode value="0"/>
+      <headphone-virtualizer-mode value="2"/>
       <advanced-headphone-virtualizer-rendering-config value="103,32568,11164,5090,0,3,3,3"/>
       <surround-decoder-diffuse-relocating-to-front-amount value="0"/>
       <advanced-headphone-virtualizer-lr-angle value="45"/>
@@ -476,8 +476,8 @@
         <mi-virtualizer-binaural-steering-enable value="false"/>
         <peak-value value="256"/>
         <surround-decoder-enable value="true"/>
-        <surround-boost value="24"/>
-        <volmax-boost value="16"/>
+        <surround-boost value="0"/>
+        <volmax-boost value="32"/>
         <hearing-protection-enable value="false"/>
         <hearing-protection-rms-averaging-time-win-len value="6"/>
         <hearing-protection-rms-attenuation-target value="-256"/>
@@ -488,7 +488,7 @@
         <volume-leveler-in-target value="-256"/>
         <volume-leveler-out-target value="-256"/>
         <graphic-equalizer-enable value="true"/>
-        <virtualizer-enable value="true"/>
+        <virtualizer-enable value="false"/>
         <virtualizer-start-band value="0"/>
         <headphone-virtualizer-steerer-source-distance value="24"/>
         <bass-enhancer-enable value="false"/>

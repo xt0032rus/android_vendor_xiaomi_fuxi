@@ -396,25 +396,25 @@
       }
     },
  {
-      "name": "auto_test_rear_flash",
-      "caption": "后摄闪光灯测试",
-      "config": {
-        "support_checked_flashes": [
-          {
-            "name": "cit_torch_first",
-            "switch_node_path": "/sys/class/leds/led:switch_0/brightness",
-            "torch_node_path": "/sys/class/leds/led:torch_0/brightness",
-            "trigger_node_path": "/sys/class/leds/led:switch_0/trigger",
-            "brightness": 110
-          },
-          {
-            "name": "cit_torch_second",
-            "switch_node_path": "/sys/class/leds/led:switch_1/brightness",
-            "torch_node_path": "/sys/class/leds/led:torch_1/brightness",
-            "trigger_node_path": "/sys/class/leds/led:switch_1/trigger",
-            "brightness": 110
-          }
-        ]
+	"name": "auto_test_rear_flash",
+        "caption": "后摄闪光灯测试",
+	"config": {
+        	"support_checked_flashes":[
+		   {
+                        "name": "cit_torch_first",
+                        "switch_node_path": "/sys/class/leds/led:switch_0/brightness",
+                        "torch_node_path": "/sys/class/leds/led:torch_0/brightness",
+			"trigger_node_path":"/sys/class/leds/led:switch_0/trigger",
+                        "brightness": 110
+                    },
+                    {
+                        "name": "cit_torch_second",                        
+                        "switch_node_path": "/sys/class/leds/led:switch_1/brightness",
+                        "torch_node_path": "/sys/class/leds/led:torch_1/brightness",
+			"trigger_node_path":"/sys/class/leds/led:switch_1/trigger",
+                        "brightness": 110
+                    }
+		]
       }
     },
         {

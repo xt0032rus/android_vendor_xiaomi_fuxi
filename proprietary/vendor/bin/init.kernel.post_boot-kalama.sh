@@ -46,9 +46,6 @@ sched_rt_runtime_ms=`expr $long_running_rt_task_ms + 50`
 sched_rt_runtime_us=`expr $sched_rt_runtime_ms \* 1000`
 sched_rt_period_ms=`expr $sched_rt_runtime_ms + 100`
 sched_rt_period_us=`expr $sched_rt_period_ms \* 1000`
-if [ -d /sys/module/sched_walt_debug ]; then
-	echo $long_running_rt_task_ms > /proc/sys/walt/sched_long_running_rt_task_ms
-fi
 echo $sched_rt_period_us > /proc/sys/kernel/sched_rt_period_us
 echo $sched_rt_runtime_us > /proc/sys/kernel/sched_rt_runtime_us
 
@@ -115,9 +112,14 @@ echo $silver_early_upmigrate $gold_early_upmigrate > /proc/sys/walt/sched_early_
 # binder activity tasks
 echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
 
+# MIUI MOD: Performance_SmartCPUPolicy
 # cpuset parameters
 echo 0-2 > /dev/cpuset/background/cpus
-echo 0-2 > /dev/cpuset/system-background/cpus
+# echo 0-2 > /dev/cpuset/system-background/cpus
+echo 0-3 > /dev/cpuset/system-background/cpus
+echo 4-7 > /dev/cpuset/foreground/boost/cpus
+echo 0-7 > /dev/cpuset/top-app/cpus
+# END Performance_SmartCPUPolicy
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/walt/sched_boost
@@ -144,6 +146,8 @@ else
 	echo 1228800 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
 fi
 echo 100 > /proc/sys/walt/input_boost/input_boost_ms
+
+echo 10000 > /proc/sys/walt/sched_disable_mvp_thres
 
 echo 1785600 0 0 2592000 0 0 0 2476800 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
 echo 400 > /proc/sys/walt/input_boost/powerkey_input_boost_ms
@@ -278,3 +282,14 @@ case "$console_config" in
 esac
 
 setprop vendor.post_boot.parsed 1
+
+#Limit the dmabuf pool for nuwa
+vendor_name=`getprop ro.product.device`
+case "$vendor_name" in
+	"ishtar")
+		echo 128 > /sys/block/sda/queue/nr_requests
+		echo 2048 > /sys/block/sda/queue/read_ahead_kb
+	;;
+	*)
+	;;
+esac

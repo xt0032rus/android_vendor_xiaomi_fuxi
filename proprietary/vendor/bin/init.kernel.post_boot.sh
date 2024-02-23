@@ -100,7 +100,9 @@ function configure_read_ahead_kb_values() {
 		echo $ra_kb > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
 	fi
 	for dm in $dmpts; do
-		echo $ra_kb > $dm
+		if [ `cat $(dirname $dm)/../removable` -eq 0 ]; then
+			echo $ra_kb > $dm
+		fi
 	done
 }
 
@@ -162,7 +164,7 @@ if [ -f /sys/devices/soc0/soc_id ]; then
 fi
 
 case "$platformid" in
-	"519"|"536"|"600"|"601")
+	"519"|"536"|"600"|"601"|"603"|"604")
 		/vendor/bin/sh /vendor/bin/init.kernel.post_boot-kalama.sh
 		;;
 	*)

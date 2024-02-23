@@ -70,6 +70,10 @@ on boot
     chmod 0664 /sys/class/touch/touch_dev/hold_sensor
     chown system system /proc/tp_hal_version
     chmod 0664 /proc/tp_hal_version
+    chown system system /proc/tp_fw_version
+    chmod 0664 /proc/tp_fw_version
+    chown system system /proc/tp_lockdown_info
+    chmod 0664 /proc/tp_lockdown_info
     chmod 0664 /sys/class/touch/touch_dev/touch_active_status
     chown system system /sys/class/touch/touch_dev/touch_active_status
     chmod 0664 /sys/class/touch/touch_dev/touch_finger_status
@@ -88,6 +92,10 @@ on boot
     chown system system /sys/class/touch/touch_dev/touch_thp_testresult
     chmod 0664 /sys/class/touch/touch_dev/touch_thp_preset_point
     chown system system /sys/class/touch/touch_dev/touch_thp_preset_point
+    chmod 0664 /sys/class/touch/touch_dev/touch_thp_breakline_mode
+    chown system system /sys/class/touch/touch_dev/touch_thp_breakline_mode
+    chmod 0664 /sys/class/touch/touch_dev/touch_thp_breakline_result
+    chown system system /sys/class/touch/touch_dev/touch_thp_breakline_result
     chmod 0664 /sys/class/touch/touch_dev/touch_doze_analysis
     chown system system /sys/class/touch/touch_dev/touch_doze_analysis
     chown system system /sys/class/touch/touch_dev/touch_thp_cmd_ready
@@ -96,6 +104,8 @@ on boot
     chown system system /sys/class/touch/touch_dev/touch_ic_buffer
     chmod 0664 /sys/class/touch/touch_dev/abnormal_event
     chown system system /sys/class/touch/touch_dev/abnormal_event
+on charger
+    write /sys/class/touch/touch_dev/touch_doze_analysis 6
 
 service touchfeature_v2-hal-1-0 /odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
     class hal

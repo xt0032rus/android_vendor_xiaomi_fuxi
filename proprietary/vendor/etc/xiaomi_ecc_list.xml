@@ -29,6 +29,9 @@
     -->
 
     <!-- Add for Myanmar due to AOSP eccdata will treat it as ecc xiaomi-->
+
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="214 07"/>
+
     <EccEntry Ecc="191" Category="4" Condition="2" Plmn="414 FFF"/>
     <EccEntry Ecc="192" Category="2" Condition="2" Plmn="414 FFF"/>
     <EccEntry Ecc="199" Category="1" Condition="2" Plmn="414 FFF"/>
@@ -448,10 +451,10 @@
 
     <!-- Add for slovenia operator xiaomi-->
     <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "293 40" />
-    <EccEntry Ecc="1987" Category="0" Condition="5" Plmn = "293 40" />
-    <EccEntry Ecc="116000" Category="0" Condition="5" Plmn = "293 40" />
-    <EccEntry Ecc="116123" Category="0" Condition="5" Plmn = "293 40" />
-    <EccEntry Ecc="116111" Category="0" Condition="5" Plmn = "293 40" />
+    <EccEntry Ecc="1987" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116000" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116123" Category="0" Condition="1" Plmn = "293 40" />
+    <EccEntry Ecc="116111" Category="0" Condition="1" Plmn = "293 40" />
 
     <EccEntry Ecc="113" Category="0" Condition="5" Plmn = "293 70" />
     <!-- Add for slovenia operator xiaomi-->
@@ -674,6 +677,11 @@
     <!-- Add for Chile operator xiaomi-->
     <EccEntry Ecc="133" Category="0" Condition="1" Plmn = "730 FFF" />
     <EccEntry Ecc="133" Category="1" Condition="1" Plmn = "730 03" />
+    <EccEntry Ecc="131" Category="2" Condition="1" Plmn = "730 01" />
+    <EccEntry Ecc="132" Category="4" Condition="1" Plmn = "730 01" />
+    <EccEntry Ecc="133" Category="1" Condition="1" Plmn = "730 01" />
+    <EccEntry Ecc="136" Category="16" Condition="1" Plmn = "730 01" />
+    <EccEntry Ecc="137" Category="8" Condition="1" Plmn = "730 01" />
     <!-- Add for Chile operator xiaomi-->
 
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "852 FFF" />

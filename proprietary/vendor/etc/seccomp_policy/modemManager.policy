@@ -61,3 +61,19 @@ recvfrom: 1
 getrlimit: 1
 setpriority: 1
 nanosleep: 1
+
+# added for get qesdk-manager pid
+getsockopt: 1
+
+# added for open/read QESDK Core binaries
+lseek: 1
+
+# added for netlink
+setsockopt: 1
+bind: 1
+getsockname: 1
+sendmsg: 1
+recvmsg: 1
+
+# added for get gid
+getgid: 1
