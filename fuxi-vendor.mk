@@ -609,31 +609,31 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/fuxi/proprietary/odm/etc/sensors/config/sx937x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_0.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/sensors/config/sx937x_reg_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_reg_0.json \
     vendor/xiaomi/fuxi/proprietary/odm/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/tcs3408.json \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-abnormal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-abnormal.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-cclassvideo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-cclassvideo.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-cgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-cgame.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-dolbyvision.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-dolbyvision.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-huanji.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-per-cclassvideo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-cclassvideo.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-per-cgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-cgame.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-per-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-class0.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-per-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-normal.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-per-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-video.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
-    vendor/xiaomi/fuxi/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-4k.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-abnormal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-abnormal.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-arvr.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-camera.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-camera.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-cclassvideo.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cclassvideo.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cgame.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-class0.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-dolbyvision.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-dolbyvision.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-mgame.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-normal.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-huanji.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-mgame.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-navigation.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-normal.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-cclassvideo.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-cclassvideo.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-cgame.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-class0.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-normal.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-per-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-video.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-phone.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-phone.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-tgame.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
+    vendor/xiaomi/fuxi/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/fuxi/proprietary/vendor/firmware/0_click_P_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/0_click_P_RTP.bin \
     vendor/xiaomi/fuxi/proprietary/odm/firmware/101_offlineCountdown_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/101_offlineCountdown_P_RTP.bin \
     vendor/xiaomi/fuxi/proprietary/odm/firmware/102_sceneBombInjury_P_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/102_sceneBombInjury_P_RTP.bin \
