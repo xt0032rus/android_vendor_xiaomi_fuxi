@@ -258,60 +258,58 @@
     <EccEntry Ecc="113" Category="0" Condition="2" Plmn="452 FFF"/>
     <EccEntry Ecc="114" Category="0" Condition="2" Plmn="452 FFF"/>
     <EccEntry Ecc="115" Category="0" Condition="2" Plmn="452 FFF"/>
+    <EccEntry Ecc="112" Category="16" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="113" Category="1" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="114" Category="4" Condition="1" Plmn="452 02"/>
+    <EccEntry Ecc="115" Category="2" Condition="1" Plmn="452 02"/>
     <!-- Add for Vietnam due to AOSP eccdata will treat it as ecc  xiaomi-->
 
     <!-- Add 999 for HongKong xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="454 FFF"/>
     <EccEntry Ecc="110" Category="0" Condition="1" Plmn="454 FFF"/>
 
-    <!-- Add for CT 2/3G network -->
-    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="120" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="460 03"/>
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 03"/>
-
-    <!-- Add for CT VOLTE requirement -->
-    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="119" Category="4" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="120" Category="2" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="122" Category="8" Condition="1" Plmn="460 11"/>
-    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="460 11"/>
-
     <!-- China CTA emergency numbers for GSM operators -->
-    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="119" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="120" Category="0" Condition="2" Plmn="460 FFF"/>
-    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="460 FFF"/>
-    <!-- Support dial 999 under G+N/A case because CT network don't support
-         dial 999 without no CT SIM
-    -->
-    <EccEntry Ecc="999" Category="0" Condition="2" Plmn="460 FFF"/>
-
-    <!-- 从73755的配置中拿出来的，有卡配了这些号码  xiaomi-->
+    <!-- xiaomi begin maweiying HOUJI-20808  2023/10/04 Description:for 460 ecc control by modem -->
+ 
+    <!-- xiaomi end -->
+    <!-- xiaomi begin -->
+    <!-- maweiying HSHENNONG-33099 add china ecc for xiaomi -->
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="000" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="08" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="118" Category="0" Condition="1" Plmn="460 FFF"/>
     <EccEntry Ecc="911" Category="2" Condition="1" Plmn="460 FFF"/>
-    <!-- 从73755的配置中拿出来的，有卡配了这些号码  xiaomi-->
-
+    <!-- xiaomi end -->
     <!--xiaomi Ireland-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="272 FFF"/>
     <!--xiaomi Ireland-->
 
-    <!-- Add for Taiwan FET operator (466 01) -->
+    <!-- Add for Taiwan FET operator (466 01/02/03) -->
     <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 01"/>
     <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 01"/>
     <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 01"/>
     <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 01"/>
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 01"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 02"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 02"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 02"/>
+    <EccEntry Ecc="110" Category="1" Condition="2" Plmn="466 03"/>
+    <EccEntry Ecc="112" Category="2" Condition="1" Plmn="466 03"/>
+    <EccEntry Ecc="119" Category="4" Condition="2" Plmn="466 03"/>
+    <EccEntry Ecc="911" Category="2" Condition="1" Plmn="466 03"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 03"/>
 
-    <!-- Add for Taiwan APTG operator (466 05) -->
+    <!-- Add for Taiwan APTG operator (466 05/12) -->
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 05"/>
     <EccEntry Ecc="112" Category="4" Condition="1" Plmn="466 05"/>
     <EccEntry Ecc="119" Category="2" Condition="1" Plmn="466 05"/>
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 05"/>
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="112" Category="4" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="119" Category="2" Condition="1" Plmn="466 12"/>
+    <EccEntry Ecc="118" Category="0" Condition="2" Plmn="466 12"/>
 
     <!-- Add for Taiwan T star operator (466 89) -->
     <EccEntry Ecc="110" Category="0" Condition="2" Plmn="466 89"/>
@@ -639,13 +637,23 @@
     <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 28" /> 
 
     <!-- Add for Indonesia Indosat operator -->
-    <EccEntry Ecc="110" Category="0" Condition="1" Plmn = "510 01" />
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 01" />
     <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 01" />
     <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 01" />
 
     <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "510 01" />
     <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 01" />
     <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 01" />
+
+  
+    <!-- Add for Indonesia Three operator -->
+    <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "510 89" />
+    <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 89" />
+    <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 89" />
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn = "510 89" />
+    <EccEntry Ecc="115" Category="0" Condition="1" Plmn = "510 89" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 89" />
+
 
     <!-- Add for Indonesia xl operator -->
     <EccEntry Ecc="110" Category="0" Condition="1" Plmn = "510 11" />
@@ -673,6 +681,8 @@
 
     <!-- Add for Singapore operator xiaomi-->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "525 03" />
+    <EccEntry Ecc="999" Category="1" Condition="1" Plmn = "525 05" />
+    <EccEntry Ecc="999" Category="31" Condition="1" Plmn = "525 01" />
 
     <!-- Add for Chile operator xiaomi-->
     <EccEntry Ecc="133" Category="0" Condition="1" Plmn = "730 FFF" />
@@ -694,4 +704,9 @@
     <!-- Bolivia operator xiaomi-->
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn = "736 FFF" /> 
     <!-- Bolivia operator xiaomi-->
+	 <!-- Add for Hungary operator xiaomi-->
+    <EccEntry Ecc="104" Category="31" Condition="3" Plmn = "216 70" />
+    <EccEntry Ecc="105" Category="31" Condition="3" Plmn = "216 70" />
+    <EccEntry Ecc="107" Category="31" Condition="3" Plmn = "216 70" />
+<!-- Add for Hungary operator xiaomi-->
 </EccTable>

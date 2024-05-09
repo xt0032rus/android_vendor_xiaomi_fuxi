@@ -47,6 +47,9 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x1" Node="/sys/module/msm_performance/parameters/cpu_max_freq" />
         <Minor OpcodeValue="0x2" Node="/sys/devices/system/cpu/cpufreq/policy0/walt/adaptive_low_freq" />
         <Minor OpcodeValue="0x3" Node="/sys/devices/system/cpu/cpufreq/policy0/walt/adaptive_high_freq" />
+        <Minor OpcodeValue="0x4" Node="/sys/devices/system/cpu/cpufreq/policy3/walt/target_load_thresh" />
+        <Minor OpcodeValue="0x5" Node="/sys/devices/system/cpu/cpufreq/policy0/walt/target_load_thresh" />
+        <Minor OpcodeValue="0x6" Node="/sys/devices/system/cpu/cpufreq/policy7/walt/target_load_thresh" />
     <!-- cpufreq major end -->
 
     <!-- sched major start -->
@@ -336,6 +339,18 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x1" Node="/proc/sys/walt/task_load_boost" />
         <Minor OpcodeValue="0x2" Node="/proc/sys/walt/sched_cluster_util_thres_pct" />
         <Minor OpcodeValue="0x3" Node="/proc/sys/walt/sched_idle_enough" />
+        <Minor OpcodeValue="0x10" Node="/dev/cpuset/camera-daemon/cpus" />
+        <Minor OpcodeValue="0x11" Node="/dev/cpuset/camera-background/cpus" />
+        <Minor OpcodeValue="0x12" Node="/dev/cpuctl/background/cpu.shares" />
+        <Minor OpcodeValue="0x13" Node="/dev/cpuctl/camera-daemon/cpu.shares" />
+        <Minor OpcodeValue="0x14" Node="/dev/cpuctl/camera-daemon/cpu.uclamp.min" />
+        <Minor OpcodeValue="0x15" Node="/dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive" />
+        <Minor OpcodeValue="0x16" Node="/dev/cpuctl/camera-daemon/cpu.uclamp.sched_boost_no_override" />
+        <Minor OpcodeValue="0x17" Node="/dev/cpuctl/top-app/cpu.shares" />
+
+        <Minor OpcodeValue="0x4" Node="/proc/sys/walt/sched_em_inflate_pct" />
+        <Minor OpcodeValue="0x5" Node="/proc/sys/walt/sched_em_inflate_thres" />
+        <Minor OpcodeValue="0x6" Node="/proc/sys/walt/sched_heavy_nr" />
     <!-- sched2 major end -->
     <!--Add new resource expected value and write value in configs/test/common/perfcommonresourceconfigs.xml
     for support in regression framework-->

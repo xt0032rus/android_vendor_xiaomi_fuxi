@@ -688,7 +688,7 @@
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="kalama" Fps="120"
-                Resources="0x40800000, 1200, 0x42804000, 5, 0x42C20000, 1" />
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="kalama" Fps="144"

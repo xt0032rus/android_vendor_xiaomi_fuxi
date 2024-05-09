@@ -144,6 +144,7 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x0" />
         <Minor OpcodeValue="0x1" />
         <Minor OpcodeValue="0x2" Cluster="1" WVal="1" RVal="1" />
+        <Minor OpcodeValue="0x3" Cluster="1" Exception="Cant compare. Node written as decimal read as binary with spaces." />
     <!-- core hotplug major end-->
 
     <!-- interactive major start -->
@@ -357,6 +358,9 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x1" Exception="TASK LOAD BOOST NEED PID" />
         <Minor OpcodeValue="0x2" WVal="0x20" RVal="32" />
         <Minor OpcodeValue="0x3" WVal="0x23" RVal="35" />
+        <Minor OpcodeValue="0x4" WVal="0x12C" RVal="300" />
+        <Minor OpcodeValue="0x5" WVal="0xDC" RVal="220" />
+        <Minor OpcodeValue="0x6" WVal="2" RVal="2" />
     <!-- sched2 major end -->
 
     </PerfResources>
