@@ -1040,3 +1040,9 @@ install_symlink {
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
+install_symlink {
+	name: "aon_front_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/camera/aon_front.pb",
+	symlink_target: "/odm/lib64/camera/aon_front.pb",
+}

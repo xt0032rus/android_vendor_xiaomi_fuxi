@@ -2894,4 +2894,5 @@ PRODUCT_PACKAGES += \
     libwfdnative_libwfdnative_symlink64 \
     libEGL_adreno_libEGL_adreno_symlink64 \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
-    libq3dtools_adreno_libq3dtools_adreno_symlink64
+    libq3dtools_adreno_libq3dtools_adreno_symlink64 \
+    aon_front_symlink64
