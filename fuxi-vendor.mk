@@ -2799,7 +2799,6 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     com.qualcomm.qti.gpudrivers.kalama.api33 \
     uimgbaservice \
-    EuiccGoogle \
     ImsRcsService \
     QCC \
     QtiTelephony \
